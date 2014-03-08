@@ -9,10 +9,8 @@ domain = "hwx.test"
 
 # Identify the vm's by name, ipaddress, cpu's, memory and the roles and additional recipes.
 boxes = [
-    {:name => "d1-denali", :ipaddress => "10.0.6.31", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "d2-denali", :ipaddress => "10.0.6.32", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "d3-denali", :ipaddress => "10.0.6.33", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "d4-denali", :ipaddress => "10.0.6.34", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []}
+    {:name => "m1-denali", :ipaddress => "10.0.6.21", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base","ambari"], :recipes => []},
+    {:name => "m2-denali", :ipaddress => "10.0.6.22", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []}
 ]
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
