@@ -9,10 +9,10 @@ domain = "hwx.test"
 
 # Identify the vm's by name, ipaddress, cpu's, memory and the roles and additional recipes.
 boxes = [
-    {:name => "u1-denali", :ipaddress => "10.0.6.41", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "u2-denali", :ipaddress => "10.0.6.42", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "u3-denali", :ipaddress => "10.0.6.43", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []},
-    {:name => "u4-denali", :ipaddress => "10.0.6.44", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 3072, :roles => ["base"], :recipes => []}
+    {:name => "u1-denali", :ipaddress => "10.0.6.41", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 2048, :roles => ["base"], :recipes => []},
+    {:name => "u2-denali", :ipaddress => "10.0.6.42", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 2048, :roles => ["base"], :recipes => []},
+    {:name => "u3-denali", :ipaddress => "10.0.6.43", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 2048, :roles => ["base"], :recipes => []},
+    {:name => "u4-denali", :ipaddress => "10.0.6.44", :netmask => "255.255.0.0", :gateway => "10.0.0.1", :cpus => 2, :memory => 2048, :roles => ["base"], :recipes => []}
 ]
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
