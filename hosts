@@ -12,20 +12,20 @@
 ::1	localhost localhost.localdomain localhost6 localhost6.localdomain6
 
 # Master Nodes
-10.0.6.21 m1_denali.hwx.test m1_denali
-10.0.6.22 m2_denali.hwx.test m2_denali
-10.0.6.23 m3_denali.hwx.test m3_denali
-10.0.6.24 m4_denali.hwx.test m4_denali
+10.0.6.21 m1-denali.hwx.test m1-denali
+10.0.6.22 m2-denali.hwx.test m2-denali
+10.0.6.23 m3-denali.hwx.test m3-denali
+10.0.6.24 m4-denali.hwx.test m4-denali
 
 # Datanodes
-10.0.6.31 d1_denali.hwx.test d1_denali
-10.0.6.32 d2_denali.hwx.test d2_denali
-10.0.6.33 d3_denali.hwx.test d3_denali
-10.0.6.34 d4_denali.hwx.test d4_denali
-10.0.6.35 d5_denali.hwx.test d5_denali
+10.0.6.31 d1-denali.hwx.test d1-denali
+10.0.6.32 d2-denali.hwx.test d2-denali
+10.0.6.33 d3-denali.hwx.test d3-denali
+10.0.6.34 d4-denali.hwx.test d4-denali
+10.0.6.35 d5-denali.hwx.test d5-denali
 
 # Utility Clusters (Storm and Kafka)
-10.0.6.41 u1_denali.hwx.test u1_denali
-10.0.6.42 u2_denali.hwx.test u2_denali
-10.0.6.43 u3_denali.hwx.test u3_denali
-10.0.6.44 u4_denali.hwx.test u4_denali
+10.0.6.41 u1-denali.hwx.test u1-denali
+10.0.6.42 u2-denali.hwx.test u2-denali
+10.0.6.43 u3-denali.hwx.test u3-denali
+10.0.6.44 u4-denali.hwx.test u4-denali
