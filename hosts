@@ -11,6 +11,8 @@
 10.0.6.6	repo.hwx.test
 ::1	localhost localhost.localdomain localhost6 localhost6.localdomain6
 
+10.0.0.35 denali.local denali
+
 # Master Nodes
 10.0.6.21 m1-denali.hwx.test m1-denali
 10.0.6.22 m2-denali.hwx.test m2-denali
