@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	  # Using the above "domain" value to set the hostname.
       vmconfig.vm.hostname = "%s" % opts[:name]+"."+domain.to_s
       #vmconfig.vm.network :private_network, ip: opts[:ipaddress], netmask: opts[:netmask]  
-      vmconfig.vm.network :public_network, :bridge => 'en0: Ethernet 1', ip: opts[:ipaddress], netmask: opts[:netmask]  
+      vmconfig.vm.network :public_network, :bridge => 'en0: Ethernet', ip: opts[:ipaddress], netmask: opts[:netmask]  
 	  
 	  # Add host aliases to /etc/hosts
       vmconfig.hostmanager.aliases = opts[:name]
