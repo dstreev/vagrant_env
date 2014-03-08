@@ -1,0 +1,31 @@
+#
+# This file is managed by Chef, using the hostsfile cookbook.
+# Editing this file by hand is highly discouraged!
+#
+# Comments containing an @ sign should not be modified or else
+# hostsfile will be unable to guarantee relative priority in
+# future Chef runs!
+#
+
+127.0.0.1 localhost
+10.0.6.6	repo.hwx.test
+::1	localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+# Master Nodes
+10.0.6.21 m1_denali.hwx.test m1_denali
+10.0.6.22 m2_denali.hwx.test m2_denali
+10.0.6.23 m3_denali.hwx.test m3_denali
+10.0.6.24 m4_denali.hwx.test m4_denali
+
+# Datanodes
+10.0.6.31 d1_denali.hwx.test d1_denali
+10.0.6.32 d2_denali.hwx.test d2_denali
+10.0.6.33 d3_denali.hwx.test d3_denali
+10.0.6.34 d4_denali.hwx.test d4_denali
+10.0.6.35 d5_denali.hwx.test d5_denali
+
+# Utility Clusters (Storm and Kafka)
+10.0.6.41 u1_denali.hwx.test u1_denali
+10.0.6.42 u2_denali.hwx.test u2_denali
+10.0.6.43 u3_denali.hwx.test u3_denali
+10.0.6.44 u4_denali.hwx.test u4_denali
