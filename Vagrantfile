@@ -21,12 +21,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.private_key_path = "/Users/%s/.ssh/vagrant" % ENV['USER'].to_s
 
   config.ssh.username = "vagrant"
-  
-  config.vm.provision :hostmanager
-  config.hostmanager.enabled = true
-  config.hostmanager.manage_host = true
-  config.hostmanager.ignore_private_ip = false
-  config.hostmanager.include_offline = true
+
+# CURRENT HAVING ISSUE WITH /etc/hosts adjustments.  It's setting everything to 127.0.0.1, so we're managing those manually for now.  
+#  config.vm.provision :hostmanager
+#  config.hostmanager.enabled = true
+#  config.hostmanager.manage_host = true
+#  config.hostmanager.ignore_private_ip = true
+#  config.hostmanager.include_offline = true
 
   boxes.each do |opts|
     config.vm.define opts[:name] do |vmconfig|
@@ -45,6 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	  # Using the above "domain" value to set the hostname.
       vmconfig.vm.hostname = "%s" % opts[:name]+"."+domain.to_s
+      #vmconfig.vm.network :private_network, ip: opts[:ipaddress], netmask: opts[:netmask]  
       vmconfig.vm.network :public_network, :bridge => 'en0: Ethernet 1', ip: opts[:ipaddress], netmask: opts[:netmask]  
 	  
 	  # Add host aliases to /etc/hosts
